@@ -1146,14 +1146,34 @@
         "signature": "ceadf8ae9b705cdfa854ab0efc44d22509e8e2a0d9ff35206bde3a954e469f07",
         "affectsGlobalScope": false
       },
-      "../src/app.module.ts": {
-        "version": "23fd11ba2fabe8d90089c3abdcaf9cbb9bb76e67c47d66b4890f8973923b8f9f",
-        "signature": "b82491e2990291580288c5602d4c017238977749d52b17391f0e45d9a29be644",
+      "../src/tasks/task.model.ts": {
+        "version": "e3fb6fd96a713379d40388aaf6b9e2ce7bfeac377a4ba750f5ecce4c0f8af1d8",
+        "signature": "1f1972745fd56e4323782ccdc86730f1ae6b07fc29012c7c2a2872104f6d6fca",
         "affectsGlobalScope": false
       },
-      "../src/app.service.ts": {
-        "version": "eaf8514ce110fa428a93a27408df4d06d133dbd9ed0a775c315ddfdd507853a9",
-        "signature": "653711fba8904aa27fd8911b63cf526e7b334e13a292da4cefdbbe179ac3f3f2",
+      "../src/tasks/dto/create-task.dto.ts": {
+        "version": "3b696c8fb77178765df56b9c87d6303145c364ea33344bd4c17be352b522d807",
+        "signature": "b1d26f03607e121c7317f85d8725d2562ea98694c85f768a3db85be2488756e3",
+        "affectsGlobalScope": false
+      },
+      "../src/tasks/tasks.service.ts": {
+        "version": "2793ba34d6c7e48f2d9fac5f57eb39771ae8cde3e726cf0b15cbfbda347303ec",
+        "signature": "3770acae4feb359e7406fbbc60325785f8a1980d054fa34b36ba75e191021a6a",
+        "affectsGlobalScope": false
+      },
+      "../src/tasks/tasks.controller.ts": {
+        "version": "c1ae7836ba1e0786593a5ef4f1eea6bf44039fac27b42b038ea8f9aafeca9cec",
+        "signature": "77aa15037e41fe706184ca18b0abc9482eb08f49bb232273dbf3f614fd561313",
+        "affectsGlobalScope": false
+      },
+      "../src/tasks/tasks.module.ts": {
+        "version": "814bcd815d9da372cb45e4bf74d39ae34e68d8edf9004d979764d98738970697",
+        "signature": "957753c3d8b7f5d76f3b7dcceab5c1f0b308580c6b4e2819f77518edb37b6c5f",
+        "affectsGlobalScope": false
+      },
+      "../src/app.module.ts": {
+        "version": "fc60c1ffd4d957a8f773ab5ad3dd933a56f811e02cce6024eeadb719e3ecf90f",
+        "signature": "b82491e2990291580288c5602d4c017238977749d52b17391f0e45d9a29be644",
         "affectsGlobalScope": false
       },
       "../node_modules/@nestjs/core/adapters/http-adapter.d.ts": {
@@ -5080,15 +5100,8 @@
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.2/fs.d.ts",
         "../node_modules/@types/node/ts3.2/util.d.ts",
-        "../node_modules/@types/node/util.d.ts"
-      ],
-      "../src/app.service.ts": [
-        "../node_modules/@nestjs/common/index.d.ts",
-        "../node_modules/@types/graceful-fs/index.d.ts",
-        "../node_modules/@types/node/fs.d.ts",
-        "../node_modules/@types/node/ts3.2/fs.d.ts",
-        "../node_modules/@types/node/ts3.2/util.d.ts",
-        "../node_modules/@types/node/util.d.ts"
+        "../node_modules/@types/node/util.d.ts",
+        "../src/tasks/tasks.module.ts"
       ],
       "../src/main.ts": [
         "../node_modules/@nestjs/core/index.d.ts",
@@ -5098,6 +5111,51 @@
         "../node_modules/@types/node/ts3.2/util.d.ts",
         "../node_modules/@types/node/util.d.ts",
         "../src/app.module.ts"
+      ],
+      "../src/tasks/dto/create-task.dto.ts": [
+        "../node_modules/@types/graceful-fs/index.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts",
+        "../node_modules/@types/node/util.d.ts"
+      ],
+      "../src/tasks/task.model.ts": [
+        "../node_modules/@types/graceful-fs/index.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts",
+        "../node_modules/@types/node/util.d.ts"
+      ],
+      "../src/tasks/tasks.controller.ts": [
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../node_modules/@types/graceful-fs/index.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../src/tasks/dto/create-task.dto.ts",
+        "../src/tasks/task.model.ts",
+        "../src/tasks/tasks.service.ts"
+      ],
+      "../src/tasks/tasks.module.ts": [
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../node_modules/@types/graceful-fs/index.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../src/tasks/tasks.controller.ts",
+        "../src/tasks/tasks.service.ts"
+      ],
+      "../src/tasks/tasks.service.ts": [
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../node_modules/@types/graceful-fs/index.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../src/tasks/dto/create-task.dto.ts",
+        "../src/tasks/task.model.ts"
       ]
     },
     "exportedModulesMap": {
@@ -8333,6 +8391,15 @@
         "../node_modules/@types/node/ts3.2/fs.d.ts",
         "../node_modules/@types/node/ts3.2/util.d.ts",
         "../node_modules/@types/node/util.d.ts"
+      ],
+      "../src/tasks/tasks.controller.ts": [
+        "../src/tasks/dto/create-task.dto.ts",
+        "../src/tasks/task.model.ts",
+        "../src/tasks/tasks.service.ts"
+      ],
+      "../src/tasks/tasks.service.ts": [
+        "../src/tasks/dto/create-task.dto.ts",
+        "../src/tasks/task.model.ts"
       ]
     },
     "semanticDiagnosticsPerFile": [
@@ -8699,8 +8766,32 @@
       "../node_modules/typescript/lib/lib.scripthost.d.ts",
       "../node_modules/typescript/lib/lib.webworker.importscripts.d.ts",
       "../src/app.module.ts",
-      "../src/app.service.ts",
-      "../src/main.ts"
+      "../src/main.ts",
+      "../src/tasks/dto/create-task.dto.ts",
+      "../src/tasks/task.model.ts",
+      [
+        "../src/tasks/tasks.controller.ts",
+        [
+          {
+            "file": "../src/tasks/tasks.controller.ts",
+            "start": 663,
+            "length": 2,
+            "messageText": "Cannot find name 'id'.",
+            "category": 1,
+            "code": 2304
+          },
+          {
+            "file": "../src/tasks/tasks.controller.ts",
+            "start": 667,
+            "length": 3,
+            "messageText": "Cannot find name 'key'.",
+            "category": 1,
+            "code": 2304
+          }
+        ]
+      ],
+      "../src/tasks/tasks.module.ts",
+      "../src/tasks/tasks.service.ts"
     ]
   },
   "version": "3.9.6"
