@@ -1457,12 +1457,17 @@
         "affectsGlobalScope": false
       },
       "../src/tasks/tasks.service.ts": {
-        "version": "e10a295fed0a52696e23e58959eb976c265f53a476d0538529f2c424df3b3047",
+        "version": "423e7124d947b98e172abe89204d7fd177a4ffaad51a0a7a556c2d8b40a9306d",
         "signature": "df8e02e6a2ac1b06628ecb3e98e2ca276bda69a066699a82ddc6b4ee2b3a34a6",
         "affectsGlobalScope": false
       },
+      "../src/tasks/pipes/task-status-validation.pipe.ts": {
+        "version": "125ae1ac861eb156b9a520f96b15f1314a6543369dd3217599df7be189954a9b",
+        "signature": "6027cd194c0e73d75366b9486a45eda1baabfcc9258298edd7358d6dca11595e",
+        "affectsGlobalScope": false
+      },
       "../src/tasks/tasks.controller.ts": {
-        "version": "55c11d2620c984b0749125a3cc3a07543709da1e5eadb42a3b453a08f1d6ccee",
+        "version": "2494a25e954a949295ad14af83f9c246c25f60e509d30c7155caea4d2dd948e0",
         "signature": "b67751cde6bb81035769d6dc874f54c90dd294f53170cba27595a6fa7bf18f9b",
         "affectsGlobalScope": false
       },
@@ -5899,6 +5904,15 @@
         "../node_modules/@types/node/util.d.ts",
         "../src/tasks/task.model.ts"
       ],
+      "../src/tasks/pipes/task-status-validation.pipe.ts": [
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../node_modules/@types/graceful-fs/index.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../src/tasks/task.model.ts"
+      ],
       "../src/tasks/task.model.ts": [
         "../node_modules/@types/graceful-fs/index.d.ts",
         "../node_modules/@types/node/fs.d.ts",
@@ -5915,6 +5929,7 @@
         "../node_modules/@types/node/util.d.ts",
         "../src/tasks/dto/create-task.dto.ts",
         "../src/tasks/dto/get-tasks-filter.dto.ts",
+        "../src/tasks/pipes/task-status-validation.pipe.ts",
         "../src/tasks/task.model.ts",
         "../src/tasks/tasks.service.ts"
       ],
@@ -9655,6 +9670,10 @@
       "../src/tasks/dto/get-tasks-filter.dto.ts": [
         "../src/tasks/task.model.ts"
       ],
+      "../src/tasks/pipes/task-status-validation.pipe.ts": [
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../src/tasks/task.model.ts"
+      ],
       "../src/tasks/tasks.controller.ts": [
         "../src/tasks/dto/create-task.dto.ts",
         "../src/tasks/dto/get-tasks-filter.dto.ts",
@@ -10178,14 +10197,13 @@
       "../src/tasks/dto/create-task.dto.ts",
       "../src/tasks/dto/get-tasks-filter.dto.ts",
       "../src/tasks/task.model.ts",
-      "../src/tasks/tasks.controller.ts",
       "../src/tasks/tasks.module.ts",
       [
         "../src/tasks/tasks.service.ts",
         [
           {
             "file": "../src/tasks/tasks.service.ts",
-            "start": 121,
+            "start": 140,
             "length": 6,
             "messageText": "Cannot find module 'uuid' or its corresponding type declarations.",
             "category": 1,

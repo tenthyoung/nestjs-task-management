@@ -30,7 +30,11 @@ let TasksService = class TasksService {
     }
     getTaskById(id) {
         console.log(this.tasks);
-        return this.tasks.find(task => task.id === id);
+        const found = this.tasks.find(task => task.id === id);
+        if (!found) {
+            throw new common_1.NotFoundException(`Task with ID: ${id} could not be found :()`);
+        }
+        return found;
     }
     createTask(createTaskDto) {
         const { title, description } = createTaskDto;
@@ -50,7 +54,8 @@ let TasksService = class TasksService {
         return task;
     }
     deleteTask(id) {
-        this.tasks = this.tasks.filter(task => task.id !== id);
+        const found = this.getTaskById(id);
+        this.tasks = this.tasks.filter(task => task.id !== found.id);
     }
 };
 TasksService = __decorate([
